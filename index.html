@@ -1,21 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/Home.module.css" />
+    <title>Home</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
-</head>
-
-<body>
-  <nav class="fixed top-0 left-0 flex flex-col justify-between">
-    <a href="/">Home</a>
-    <a href="/pages/contact/">Contact</a>
-    <a href="/pages/blog/">Blog</a>
-    <a href="/pages/services/">Services</a>
-    <a href="/pages/about/">About</a>
-  </nav>
-</body>
-
+  <body>
+    <nav class="fixed top-0 left-0 w-full h-full">
+      <aside
+        class="flex flex-row justify-between max-w-screen-md mx-auto p-8 text-gray-600"
+      >
+        <button id="hamburger-btn" class="md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5"
+            />
+          </svg>
+        </button>
+        <div class="hidden md:flex flex-row space-x-2 transition-all">
+          <a
+            href=" /"
+            class="font-bold text-black hover:bg-gray-200 py-1 px-2 rounded-md"
+            >Home</a
+          >
+          <a
+            href="/pages/contact/"
+            class="hover:bg-gray-200 py-1 px-2 rounded-md"
+            >Contact</a
+          >
+          <a href="/pages/blog/" class="hover:bg-gray-200 py-1 px-4 rounded-md"
+            >Blog</a
+          >
+          <a
+            href="/pages/services/"
+            class="hover:bg-gray-200 py-1 px-2 rounded-md"
+            >Services</a
+          >
+          <a href="/pages/about/" class="hover:bg-gray-200 py-1 px-2 rounded-md"
+            >About</a
+          >
+        </div>
+        <button id="theme-btn" class="bg-gray-300 px-2 py-1 rounded-lg">
+          <i class="fa-solid fa-sun"></i><i class="fa-solid fa-moon hidden"></i>
+        </button>
+      </aside>
+      <div
+        id="mobile-menu"
+        class="hidden flex-col space-y-16 justify-center items-center md:hidden w-full h-full absolute bg-white"
+      >
+        <a href=" /" class="hover:bg-gray-300 text-black px-3 py-2 rounded-lg"
+          >Home</a
+        >
+        <a href="/pages/contact/" class="hover:bg-gray-300 px-1 py-2 rounded-lg"
+          >Contact</a
+        >
+        <a href="/pages/blog/" class="hover:bg-gray-300 px-4 py-2 rounded-lg"
+          >Blog</a
+        >
+        <a
+          href="/pages/services/"
+          class="hover:bg-gray-300 px-1 py-2 rounded-lg"
+          >Services</a
+        >
+        <a href="/pages/about/" class="hover:bg-gray-300 px-3 py-2 rounded-lg"
+          >About</a
+        >
+      </div>
+    </nav>
+    <script src="./js/app.js"></script>
+  </body>
 </html>

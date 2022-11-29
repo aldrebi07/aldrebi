@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#mobile_menu {
+  transition: 1.8s ease-out;
+}
