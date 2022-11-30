@@ -53,7 +53,7 @@ document.getElementById("navbar").innerHTML = `
 </nav>
 <div
 id="mobile-menu"
-class="hidden flex-col space-y-4 justify-center items-center md:hidden w-32 top-[100px] left-1 p-20 absolute bg-white"
+class="rounded-lg shadow-[#ccc] shadow-2xl hidden flex-col space-y-4 justify-center items-center md:hidden w-32 top-[100px] left-1 h-max p-20 absolute bg-white"
 >
 <a
   href=" /"
