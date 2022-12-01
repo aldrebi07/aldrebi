@@ -89,13 +89,14 @@ let paths = {
   "/pages/services/": "services",
   "/pages/blog/": "blog",
   "/pages/contact/": "contact",
+  "/index.html": "home",
 };
 console.log(paths[pathName]);
 
 const tabs = document.querySelectorAll(`.${paths[pathName]}`);
 tabs.forEach((tab) => {
-  tab.classList.toggle("text-black");
-  tab.classList.toggle("font-bold");
+  tab.classList.add("text-black");
+  tab.classList.add("font-bold");
 });
 
 const hambrgerBtn = document.getElementById("hamburger-btn");
