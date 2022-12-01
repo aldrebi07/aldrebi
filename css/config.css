@@ -5,7 +5,7 @@
 #mobile_menu {
   transition: 1.8s ease-out;
 }
-#home {
+body {
   background-image: linear-gradient(to right, #00112b, #1a226a);
   background-repeat: no-repeat;
   background-size: cover;
