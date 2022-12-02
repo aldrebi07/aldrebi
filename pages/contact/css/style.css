@@ -8,7 +8,7 @@
     font-family: 'Poppins', sans-serif;
 
 }
-.contact
+section.contact
 {
     position: relative;
     min-height: 100vh;
@@ -17,6 +17,4 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url(D:\Sagarsc07\aldrebi\aldrebi\pages\contact\images\cbg.jpg);
-    background-size: cover;
 }
