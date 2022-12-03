@@ -131,6 +131,8 @@ section.contact .content p {
   }
   .container .contactInfo {
     margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
   }
   .container .contactInfo,
   .contactForm {
