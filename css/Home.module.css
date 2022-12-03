@@ -887,3 +887,7 @@ body {
   z-index: -1000000;
   background-image: linear-gradient(to right, blue, aqua);
 }
+
+nav a , nav button, nav span , nav div, nav div a{
+z-index:10000000;
+}
